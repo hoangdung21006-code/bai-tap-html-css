@@ -1,61 +1,49 @@
-/* 1. Element Selector: Đổi màu nền của toàn trang */
+/* Thiết lập màu nền (background-color) cho trang web */
 body {
-    background-color: #f0f4f8;
+    background-color: #eef2f5;
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* 2. Element Selector: Căn giữa tiêu đề <h1> */
+/* Định dạng tiêu đề và đoạn văn mô tả */
 h1 {
-    text-align: center;
-    color: #2c3e50;
+    color: #1a252f;
 }
 
-/* Grouping Selector: Gom nhóm định dạng chung cho p và li */
-p, li {
+.description {
+    color: #555555;
     font-size: 16px;
-    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-/* ID Selector: Định dạng đoạn văn mô tả */
-#bio {
-    color: #34495e;
+/* Thêm ảnh nền (background-image) và căn giữa nội dung trong khối <div> */
+.important-box {
+    /* Sử dụng ảnh nền mẫu từ Unsplash */
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Căn giữa khối div và định dạng nội dung bên trong */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    /* Căn giữa nội dung văn bản */
     text-align: center;
+    color: #ffffff;
 }
 
-/* 3. Class Selector: Định dạng danh sách với các màu sắc khác nhau */
-.hobby-list {
-    max-width: 300px;
-    margin: 20px auto;
+.important-box h2 {
+    margin-top: 0;
+    font-size: 24px;
 }
 
-.hobby-item-1 {
-    color: #e74c3c; /* Màu đỏ */
-}
-
-.hobby-item-2 {
-    color: #27ae60; /* Màu xanh lá */
-}
-
-.hobby-item-3 {
-    color: #2980b9; /* Màu xanh dương */
-}
-
-/* Class Selector: Định dạng kiểu dáng nút bấm */
-.btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.important-box p {
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* 4. Pseudo-class Selector (:hover): Hiệu ứng di chuột vào nút bấm */
-.btn:hover {
-    background-color: #1d6fa5;
+    margin-bottom: 0;
 }
