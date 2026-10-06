@@ -3,44 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luyện tập nhúng CSS</title>
-
-    <!-- Phần 2: Internal-style -->
-    <style>
-        .internal-heading {
-            color: blue;
-        }
-        .internal-text {
-            color: darkcyan;
-        }
-    </style>
-
-    <!-- Phần 3: External-style -->
+    <title>Trang web của tôi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- PHẦN 1: INLINE-STYLE -->
-    <section>
-        <h1 style="color: red;">Tiêu đề sử dụng Inline CSS</h1>
-        <p style="color: green;">Đoạn văn bản này được định dạng màu sắc bằng thuộc tính inline-style.</p>
-    </section>
+    <!-- 1. Tiêu đề h1 -->
+    <h1>Trang web của tôi</h1>
 
-    <hr>
+    <!-- 2. Đoạn văn mô tả bản thân -->
+    <p id="bio">Xin chào! Tôi là một học viên đam mê lập trình web và đang thực hành sử dụng các bộ chọn CSS để định dạng giao diện.</p>
 
-    <!-- PHẦN 2: INTERNAL-STYLE -->
-    <section>
-        <h1 class="internal-heading">Tiêu đề sử dụng Internal CSS</h1>
-        <p class="internal-text">Đoạn văn bản này được định dạng màu sắc bằng internal-style (thẻ style trong head).</p>
-    </section>
+    <!-- 3. Danh sách 3 sở thích -->
+    <ul class="hobby-list">
+        <li class="hobby-item-1">Đọc sách</li>
+        <li class="hobby-item-2">Lập trình</li>
+        <li class="hobby-item-3">Chơi thể thao</li>
+    </ul>
 
-    <hr>
-
-    <!-- PHẦN 3: EXTERNAL-STYLE -->
-    <section>
-        <h1 class="external-heading">Tiêu đề sử dụng External CSS</h1>
-        <p class="external-text">Đoạn văn bản này được định dạng màu sắc bằng external-style (file style.css bên ngoài).</p>
-    </section>
+    <!-- Nút bấm có hiệu ứng hover -->
+    <button class="btn">Liên hệ tôi</button>
 
 </body>
 </html>
