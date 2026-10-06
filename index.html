@@ -2,65 +2,45 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Form Nhập Dữ Liệu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập nhúng CSS</title>
+
+    <!-- Phần 2: Internal-style -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+        .internal-heading {
+            color: blue;
         }
-
-        /* Khung chứa Form */
-        .form-container {
-            width: 300px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-
-        /* Ô nhập liệu */
-        input[type=text], input[type=email] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0 16px 0;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        /* Nút gửi (Submit) */
-        input[type=submit] {
-            width: 100%;
-            background-color: #04AA6D;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        /* Hiệu ứng khi rê chuột vào nút */
-        input[type=submit]:hover {
-            background-color: #059862;
+        .internal-text {
+            color: darkcyan;
         }
     </style>
+
+    <!-- Phần 3: External-style -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>Form Nhập Thông Tin Học Viên</h2>
+    <!-- PHẦN 1: INLINE-STYLE -->
+    <section>
+        <h1 style="color: red;">Tiêu đề sử dụng Inline CSS</h1>
+        <p style="color: green;">Đoạn văn bản này được định dạng màu sắc bằng thuộc tính inline-style.</p>
+    </section>
 
-    <div class="form-container">
-        <form>
-            <label for="fullname">Họ và Tên:</label>
-            <input type="text" id="fullname" placeholder="Nhập họ tên...">
+    <hr>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Nhập email...">
+    <!-- PHẦN 2: INTERNAL-STYLE -->
+    <section>
+        <h1 class="internal-heading">Tiêu đề sử dụng Internal CSS</h1>
+        <p class="internal-text">Đoạn văn bản này được định dạng màu sắc bằng internal-style (thẻ style trong head).</p>
+    </section>
 
-            <input type="submit" value="Gửi Thông Tin">
-        </form>
-    </div>
+    <hr>
+
+    <!-- PHẦN 3: EXTERNAL-STYLE -->
+    <section>
+        <h1 class="external-heading">Tiêu đề sử dụng External CSS</h1>
+        <p class="external-text">Đoạn văn bản này được định dạng màu sắc bằng external-style (file style.css bên ngoài).</p>
+    </section>
 
 </body>
 </html>
