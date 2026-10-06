@@ -1,0 +1,61 @@
+/* 1. Element Selector: Đổi màu nền của toàn trang */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* 2. Element Selector: Căn giữa tiêu đề <h1> */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Grouping Selector: Gom nhóm định dạng chung cho p và li */
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ID Selector: Định dạng đoạn văn mô tả */
+#bio {
+    color: #34495e;
+    text-align: center;
+}
+
+/* 3. Class Selector: Định dạng danh sách với các màu sắc khác nhau */
+.hobby-list {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.hobby-item-1 {
+    color: #e74c3c; /* Màu đỏ */
+}
+
+.hobby-item-2 {
+    color: #27ae60; /* Màu xanh lá */
+}
+
+.hobby-item-3 {
+    color: #2980b9; /* Màu xanh dương */
+}
+
+/* Class Selector: Định dạng kiểu dáng nút bấm */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 4. Pseudo-class Selector (:hover): Hiệu ứng di chuột vào nút bấm */
+.btn:hover {
+    background-color: #1d6fa5;
+}
