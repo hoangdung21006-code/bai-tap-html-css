@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Nhập Dữ Liệu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Khung chứa Form */
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Ô nhập liệu */
+        input[type=text], input[type=email] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Nút gửi (Submit) */
+        input[type=submit] {
+            width: 100%;
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng khi rê chuột vào nút */
+        input[type=submit]:hover {
+            background-color: #059862;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form Nhập Thông Tin Học Viên</h2>
+
+    <div class="form-container">
+        <form>
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" placeholder="Nhập họ tên...">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Nhập email...">
+
+            <input type="submit" value="Gửi Thông Tin">
+        </form>
+    </div>
+
+</body>
+</html>
